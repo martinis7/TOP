@@ -59,6 +59,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MiniUzduotis\ComplexNumber.cs" />
+    <Compile Include="MiniUzduotis\ComplexNumberArithmeticTests.cs" />
+    <Compile Include="MiniUzduotis\ComplexNumberEqualityTests.cs" />
+    <Compile Include="MiniUzduotis\ComplexNumberFormattingTests.cs" />
     <Compile Include="PointTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Point.cs" />
