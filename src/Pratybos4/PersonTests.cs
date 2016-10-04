@@ -9,7 +9,7 @@ namespace Pratybos4
 {
     public class PersonTests
     {
-        [Fact(Skip ="")]
+        [Fact]
         public void ArrayIsSorted()
         {
             var people = new[]
@@ -31,7 +31,7 @@ namespace Pratybos4
             Assert.Equal(expected, peopleCopy);
         }
 
-        [Fact(Skip ="")]
+        [Fact]
         public void SetIsSorted()
         {
             var people = new[]
