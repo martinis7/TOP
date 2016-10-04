@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pratybos4
 {
-    class Person
+    public class Person : IComparable<Person>, IEquatable<Person>
     {
         public long SocialSecurityNumber { get;}
         public string FirstName { get;}
@@ -17,6 +17,29 @@ namespace Pratybos4
             SocialSecurityNumber = socialSecurityNo;
             FirstName = firstName;
             LastName = lastName;
+        }
+
+        public int CompareTo(Person other)
+        {
+            return FirstName.CompareTo(other.FirstName);
+        }
+
+        public override bool Equals(object obj)
+        {
+            var other = obj as Person;
+            if (other == null) return false;
+
+            return Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            return SocialSecurityNumber.GetHashCode();
+        }
+
+        public bool Equals(Person other)
+        {
+            return SocialSecurityNumber == other.SocialSecurityNumber;
         }
     }
 }
