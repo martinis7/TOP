@@ -1,7 +1,8 @@
 ﻿
 using System.Linq;
+using System.Text.RegularExpressions;
 
-class IpAddress
+public class IpAddress
 {
     private uint _value;
     public byte[] Octets {
@@ -64,5 +65,24 @@ class IpAddress
     public override int GetHashCode()
     {
         return _value.GetHashCode();
+    }
+
+    private static Regex IpRegex =
+        new Regex(@"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$");
+
+    public static bool IsIpAddress(string ip)
+    {
+        return IpRegex.IsMatch(ip);
+    }
+
+    public static IpAddress Parse(string ip)
+    {
+        var match = IpRegex.Match(ip);
+        return new IpAddress(
+            byte.Parse(match.Groups[1].Value),
+            byte.Parse(match.Groups[2].Value),
+            byte.Parse(match.Groups[3].Value),
+            byte.Parse(match.Groups[4].Value)
+            );
     }
 }
