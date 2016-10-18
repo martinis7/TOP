@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pratybos4", "src\Pratybos4\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pratybos5", "src\Pratybos5\Pratybos5.csproj", "{6550B2D1-A66A-4700-B6C0-953EFE151FB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pratybos6", "src\Pratybos6\Pratybos6.csproj", "{24990AC9-A8B7-487C-BB77-8FB0FB96344F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6550B2D1-A66A-4700-B6C0-953EFE151FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6550B2D1-A66A-4700-B6C0-953EFE151FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6550B2D1-A66A-4700-B6C0-953EFE151FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24990AC9-A8B7-487C-BB77-8FB0FB96344F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24990AC9-A8B7-487C-BB77-8FB0FB96344F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24990AC9-A8B7-487C-BB77-8FB0FB96344F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24990AC9-A8B7-487C-BB77-8FB0FB96344F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
