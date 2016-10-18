@@ -59,11 +59,18 @@
     <Compile Include="Examples.cs" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="FibonacciTests.cs" />
+    <Compile Include="MaybeExtensions.cs" />
     <Compile Include="OurLinq.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pratybos3\Pratybos3.csproj">
+      <Project>{f5846d0c-47a0-48e5-92d6-fcc133cf500d}</Project>
+      <Name>Pratybos3</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

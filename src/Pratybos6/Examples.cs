@@ -40,5 +40,19 @@ namespace Pratybos6
                     item => item % 2 == 0),
                 item => item * item);
         }
+
+        public void MaybeExamples()
+        {
+            var result = from x in new Maybe<int>(1)
+                         from y in DivideBy(x, 0)
+                         select y;
+        }
+
+        public Maybe<int> DivideBy(int x, int y)
+        {
+            if (y == 0)
+                return new Maybe<int>();
+            return new Maybe<int>(x / y);
+        }
     }
 }
